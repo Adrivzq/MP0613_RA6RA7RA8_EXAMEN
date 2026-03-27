@@ -44,9 +44,8 @@
                             <form action="{{ route('order.destroy', $order->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                <button class="btn btn-danger" type="submit"><i class="fa-solid fa-check"></i> Complete Order</button>
+                                <button class="btn btn-danger" type="submit"><i class="fa-solid fa-check"></i> Back to orders</button>
                             </form>
-                            <a class="btn btn-outline-secondary" href="{{ route('order.index') }}">Back to orders</a>
                         </div>
                     </div>
                 </div>
